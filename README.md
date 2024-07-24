@@ -1,4 +1,4 @@
-# photographer
+# Сайт для фотографа Юлии Таратыновой 
 
 ## Project setup
 ```
