@@ -33,7 +33,7 @@ export default {
 .home__first-screen {
   /* padding-left: 30px;
   padding-right: 30px; */
-  height: 100vh;
+  min-height: 100vh;
 
   background-image: url("@/assets/first__screen.jpg");
   background-size: no-repeat;
@@ -52,6 +52,7 @@ export default {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.3);
+  margin-top: 150px;
 }
 
 .first-screen__content_text {

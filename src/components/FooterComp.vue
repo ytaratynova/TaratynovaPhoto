@@ -93,7 +93,7 @@ export default {
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   /* display: grid;
   grid-template-columns: 1fr 10fr; */
   padding-left: 30px;
