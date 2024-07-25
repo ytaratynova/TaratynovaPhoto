@@ -54,7 +54,9 @@ export default {
 
 <style scoped>
 .about {
-  height: 100vh;
+  /* height: 100vh; */
+
+  min-height: 100vh;
   background-image: url("@/assets/about.jpg");
   background-size: no-repeat;
   background-position: center;
@@ -64,7 +66,7 @@ export default {
   align-content: center;
   flex-wrap: wrap;
   padding-left: calc(100vw / 6);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .about__content {
   max-width: 600px;
@@ -72,8 +74,8 @@ export default {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 60px;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 120px;
+  margin-bottom: 100px;
   /* overflow-y: scroll; */
   align-content: flex-start;
 }

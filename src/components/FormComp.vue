@@ -89,7 +89,8 @@ export default {
   flex-direction: column;
   align-content: flex-start;
   width: 50vw;
-  padding: 0 50px;
+  padding: 30px 50px;
+  margin-top: 150px;
 }
 .form-contacts {
   display: grid;
@@ -189,6 +190,7 @@ button {
 @media screen and (max-width: 678px) and (min-width: 320px) {
   .contact__form {
     min-width: 300px;
+    margin-top: 0;
   }
 }
 </style>

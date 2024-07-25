@@ -1,15 +1,17 @@
 <template>
   <div class="contacts">
-    <div class="contacts__text">
-      <p class="contacts__subtitle">Я верю в общение</p>
-      <p class="contacts__description">
-        В настоящее время я живу в Москве. Но я всегда открыта новым
-        предложениям и неожиданным путешествиям. Если у вас есть идея по
-        фотосъемке — пишите мне. Я буду рада воплотить самую сумасшедшую
-        фотоидею.
-      </p>
+    <div class="contacts__content">
+      <div class="contacts__text">
+        <p class="contacts__subtitle">Я верю в общение</p>
+        <p class="contacts__description">
+          В настоящее время я живу в Москве. Но я всегда открыта новым
+          предложениям и неожиданным путешествиям. Если у вас есть идея по
+          фотосъемке — пишите мне. Я буду рада воплотить самую сумасшедшую
+          фотоидею.
+        </p>
+      </div>
+      <FormComp />
     </div>
-    <FormComp />
   </div>
 </template>
 
@@ -34,20 +36,23 @@ export default {
 
 <style scoped>
 .contacts {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("@/assets/contacts.jpg");
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.contacts__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-
-  /* padding-left: calc(100vw / 6); */
+  justify-content: center;
 }
 .contacts__text {
   max-width: 420px;
+  margin-top: 150px;
 }
 .contacts__subtitle {
   font-family: Montserrat, sans-serif;
@@ -64,7 +69,7 @@ export default {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 679px) {
-  .contacts {
+  .contacts__content {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -81,15 +86,14 @@ export default {
   }
 }
 @media screen and (max-width: 678px) and (min-width: 320px) {
-  .contacts {
-    height: 200vh;
+  .contacts__content {
     display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
   }
   .contacts__text {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
