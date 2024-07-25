@@ -45,7 +45,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,6 +66,8 @@ export default {
   justify-content: center;
   gap: 60px;
   background: rgb(0 0 0 0.7);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .section__subtitle {

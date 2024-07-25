@@ -4,7 +4,11 @@
       <router-link to="/contacts" class="footer__banner-text"
         >Ищешь фотографа? Я здесь!</router-link
       >
-      <ButtonComp :value="'Связаться'" :category="'mailMe'" />
+      <ButtonComp
+        class="footer__btn"
+        :value="'Связаться'"
+        :category="'mailMe'"
+      />
     </div>
 
     <div class="footer__down">
@@ -13,7 +17,7 @@
           <ButtonComp :value="'Taratynova.photo'" />
         </div>
         <nav class="footer__menu">
-          <h4></h4>
+          <!-- <h4></h4> -->
           <router-link to="/" class="footer__link">Главная</router-link>
           <router-link to="/about" class="footer__link">Обо мне</router-link>
           <router-link to="/portfolio/children" class="footer__link"
@@ -27,7 +31,7 @@
           >
         </nav>
         <div class="footer__contacts">
-          <h4></h4>
+          <!-- <h4></h4> -->
           <a href="https://t.me/daisere" class="icon"
             ><img
               class="icon__img"
@@ -88,16 +92,16 @@ export default {
 
 <style >
 .footer {
-  background: linear-gradient(rgb(0 0 0 / 0) 60%, rgb(0 0 0 / 0.7) 60%),
-    url("@/assets/footer__banner.jpg");
+  /* background: linear-gradient(rgb(0 0 0 / 0) 60%, rgb(0 0 0 / 0.7) 60%),
+    url("@/assets/footer__banner.jpg"); */
+  background: url("@/assets/footer__banner.jpg");
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  /* display: grid;
-  grid-template-columns: 1fr 10fr; */
-  padding-left: 30px;
-  padding-right: 30px;
+
+  /* padding-left: 30px;
+  padding-right: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -112,7 +116,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .footer__banner-text {
@@ -123,15 +127,18 @@ export default {
 }
 
 .footer__down {
-  height: 40vh;
+  min-height: 40vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .footer__down_content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
 }
 .footer__logo {
   display: flex;
@@ -152,6 +159,8 @@ export default {
 
 .copyright {
   color: rgb(74, 72, 72);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 a {
   text-decoration: none;
@@ -182,6 +191,10 @@ a {
   width: 30px;
   padding-right: 15px;
 }
+.footer__btn {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
 @media screen and (max-width: 1024px) and (min-width: 679px) {
   .footer__banner-text {
@@ -196,6 +209,12 @@ a {
   .footer__up {
     flex-direction: column;
   }
+  .footer__link {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 678px) and (min-width: 320px) {
   .footer__banner-text {
@@ -205,7 +224,6 @@ a {
     flex-direction: column;
   }
   .footer__down {
-    height: 60vh;
     align-items: center;
   }
   .footer__down_content {

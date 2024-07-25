@@ -44,6 +44,7 @@ export default {
   color: white;
   /* transition: transform 0.5s easy; */
   font-size: 20px;
+  margin-bottom: 60px;
 }
 
 .button__link::before,

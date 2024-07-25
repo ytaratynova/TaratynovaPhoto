@@ -52,7 +52,8 @@ export default {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.3);
-  margin-top: 150px;
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 .first-screen__content_text {
