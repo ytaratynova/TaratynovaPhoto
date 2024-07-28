@@ -1,4 +1,4 @@
-# Сайт для фотографа Юлии Таратыновой 
+# http://taratynova.photo
 
 ## Project setup
 ```
