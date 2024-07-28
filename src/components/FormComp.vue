@@ -192,5 +192,11 @@ button {
     min-width: 300px;
     margin-top: 0;
   }
+  .form__input {
+    font-size: 14px;
+  }
+  .checkbox__label span {
+    font-size: 12px;
+  }
 }
 </style>

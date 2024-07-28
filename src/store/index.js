@@ -14,7 +14,7 @@ export default new Vuex.Store({
           "Не упускайте возможность сохранить и передать чудесные моменты детства вашего ребенка и создать ценные воспоминания на всю жизнь. Пусть получатся самые прекрасные и трогательные фотографии на память!",
         img: "main__children.jpg",
         category: "children",
-        gallery: ["children_01.jpg", "children_02.jpg", "children_03.jpg", "children_04.jpg", "children_05.jpg", "children_06.jpg", "children_07.jpg", "children_08.jpg", "children_09.jpg", "children_10.jpg", "children_11.jpg", "children_12.jpg", "children_13.jpg", "children_14.jpg", "children_15.jpg"],
+        gallery: ["children_01.jpg", "children_02.jpg", "children_03.jpg", "children_04.jpg", "children_05.jpg", "children_06.jpg", "children_07.jpg", "children_08.jpg", "children_09.jpg", "children_10.jpg", "children_11.jpg", "children_12.jpg", "children_13.jpg", "children_14.jpg", "children_15.jpg", "children_16.jpg", "children_17.jpg", "children_18.jpg", "children_19.jpg"],
       },
       {
         id: 2,
@@ -32,7 +32,7 @@ export default new Vuex.Store({
           "Отличный способ подчеркнуть красоту и индивидуальность каждой женщины. Важно выбрать стиль и атмосферу съемки, которые будут соответствовать личности и желаниям модели. Можно остановиться на классическом портрете, модельной съемке, фэшн или более креативном подходе - все зависит от того, что хочет выразить на фотографиях сама женщина. ",
         img: "main__girls.jpg",
         category: "woman",
-        gallery: ["girl_01.jpg", "girl_02.jpg", "girl_03.jpg", "girl_04.jpg", "girl_05.jpg", "girl_06.jpg", "girl_07.jpg", "girl_08.jpg", "girl_09.jpg", "girl_10.jpg", "girl_11.jpg", "girl_12.jpg"],
+        gallery: ["girl_01.jpg", "girl_02.jpg", "girl_03.jpg", "girl_04.jpg", "girl_05.jpg", "girl_06.jpg", "girl_07.jpg", "girl_08.jpg", "girl_09.jpg", "girl_10.jpg", "girl_11.jpg", "girl_12.jpg", "girl_13.jpg"],
       },
       {
         id: 4,
@@ -49,7 +49,7 @@ export default new Vuex.Store({
         id: 1,
         package: "Пакет Минимальный",
         img: "min.jpg",
-        price: "15 000 р.",
+        price: "15.000р.",
         photos: 20,
         duration: "в течение 1-2",
         book: "Без Фотокниги",
@@ -59,7 +59,7 @@ export default new Vuex.Store({
         id: 2,
         package: "Пакет Стандартный",
         img: "standart.jpg",
-        price: "30 000 р.",
+        price: "30.000р.",
         photos: 35,
         duration: "до 3х",
         book: "Фотокнига 20*20 - 10 разворотов"
@@ -68,7 +68,7 @@ export default new Vuex.Store({
         id: 3,
         package: "Пакет Максимальный",
         img: "max.jpg",
-        price: "45 000 р.",
+        price: "45.000р.",
         photos: 50,
         duration: "до 4х",
         book: "Фотокнига 25*25 - 15 разворотов"

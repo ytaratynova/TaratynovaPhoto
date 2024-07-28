@@ -45,7 +45,8 @@ export default {
   flex-direction: column;
 }
 .first-screen__content {
-  padding: 50px;
+  padding: 50px 50px 65px 50px;
+
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -75,7 +76,7 @@ h1 {
 
 @media screen and (max-width: 678px) and (min-width: 320px) {
   .first-screen__content {
-    padding: 30px;
+    padding: 30px 30px 45px 30px;
   }
   .first-screen__description {
     font-size: 30px;
